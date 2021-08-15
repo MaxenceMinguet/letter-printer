@@ -1,0 +1,25 @@
+{
+  "name": "letter-printer",
+  "author": "Maxence Minguet",
+  "version": "1.0.0",
+  "description": "Print letter with stars (*)",
+  "scripts": {
+    "start": "ts-node",
+    "dev::vertical": "nodemon --watch \"src/**\" --ext \"ts,json\" --ignore \"tests/**/*.test.ts\" --exec \"ts-node VerticalLetterGenerator.ts\"",
+    "dev::horizontal": "nodemon --watch \"src/**\" --ext \"ts,json\" --ignore \"tests/**/*.test.ts\" --exec \"ts-node HorizontalLetterGenerator.ts\"",
+    "vertical": "ts-node VerticalLetterGenerator.ts",
+    "horizontal": "ts-node HorizontalLetterGenerator.ts",
+    "test": "jest --coverage"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.6.1",
+    "eslint": "^7.32.0",
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.12",
+    "ts-jest": "^27.0.4",
+    "ts-node": "^10.2.0",
+    "tslint": "^6.1.3",
+    "typescript": "^4.3.5"
+  }
+}

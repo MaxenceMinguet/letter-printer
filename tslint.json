@@ -1,0 +1,71 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+    "class-name": false,
+    "export-name": false,
+    "forin": false,
+    "label-position": false,
+    "member-access": true,
+    "no-arg": false,
+    "no-console": false,
+    "no-construct": false,
+    "no-duplicate-variable": true,
+    "no-eval": false,
+    "no-function-expression": true,
+    "no-internal-module": true,
+    "no-shadowed-variable": true,
+    "no-switch-case-fall-through": true,
+    "no-unused-expression": true,
+    "no-with-statement": true,
+    "trailing-comma": false,
+    "typedef": false,
+    "use-named-parameter": true,
+    "variable-name": false,
+    "callable-types": true,
+    "comment-format": [true, "check-space"],
+    "curly": true,
+    "eofline": true,
+    "import-spacing": true,
+    "indent": [true, "spaces"],
+    "interface-over-type-literal": true,
+    "max-line-length": [true, 140],
+    "no-use-before-declare": false,
+    "no-bitwise": true,
+    "no-debugger": true,
+    "no-empty": false,
+    "no-empty-interface": true,
+    "no-inferrable-types": [true, "ignore-params"],
+    "no-string-literal": false,
+    "no-string-throw": true,
+    "no-trailing-whitespace": true,
+    "no-var-keyword": true,
+    "object-literal-sort-keys": false,
+    "one-line": [true, "check-open-brace", "check-catch", "check-else", "check-whitespace"],
+    "prefer-const": true,
+    "quotemark": [false, "single"],
+    "radix": true,
+    "triple-equals": [true, "allow-null-check"],
+    "typedef-whitespace": [
+      true,
+      {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      }
+    ],
+    "unified-signatures": true,
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-separator",
+      "check-type"
+    ]
+  },
+  "linterOptions": {
+    "exclude": ["tests/**/*.test.ts"]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
+  "compilerOptions": {
+    "target": "es5",
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "declaration": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "outDir": "lib",
+    "inlineSources": false,
+    "strictNullChecks": false,
+    "noUnusedLocals": false,
+    "esModuleInterop": true,
+    "typeRoots": ["./node_modules/@types"],
+    "lib": ["es6", "dom", "es2015.collection"]
+  },
+  "include": ["HorizontalLetterGenerator.ts", "VerticalLetterGenerator.ts", "src/**/*.ts"],
+  "exclude": ["node_modules", "lib"],
+  "importHelpers": true,
+  "downlevelIteration": true,
+  "emitDecoratorMetadata": true,
+  "allowSyntheticDefaultImports": true,
+  "noEmit": true,
+  "resolveJsonModule": true,
+  "strict": true,
+  "allowJs": true,
+  "forceConsistentCasingInFileNames": true,
+  "isolatedModules": true
+}
